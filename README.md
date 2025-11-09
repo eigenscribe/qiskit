@@ -2,8 +2,8 @@
 qiskit self study
 
 ## To-Do
-[ ] Take Basics of Quantum information course: https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information 
-    - 🥅 Get credly cert at the end
+- Take Basics of Quantum information course: https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information 
+    - [ ] 🥅 Get credly cert at the end
 
 ## Useful Platforms
 - qBraid: https://docs.qbraid.com/home/introduction 
