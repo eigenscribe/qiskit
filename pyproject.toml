@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "three-qubit-tools"          # what you will `import`, NOT the folder
+version = "0.1.0"
+description = "Utilities for 3-qubit conditional probabilities"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.8"
+dependencies = [
+    "qiskit>=0.45",
+    "matplotlib>=3.6",
+    "numpy>=1.23"
+]
+
+[tool.setuptools.packages.find]
+# include everything that looks like a package
+where = ["."]
+include = ["utils*"]
+
+[project.scripts]
+three-qubit-prob = "utils.three_qubit_probability:main"   # optional CLI
