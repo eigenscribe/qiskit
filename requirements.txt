@@ -60,6 +60,7 @@ six==1.17.0
 stack-data==0.6.3
 stevedore==5.5.0
 sympy==1.14.0
+-e git+https://github.com/eigenscribe/qiskit@0189d7e32ce4306c82de975f742d9e973fb02473#egg=three_qubit_tools
 tornado==6.5.2
 traitlets==5.14.3
 typing-inspection==0.4.2

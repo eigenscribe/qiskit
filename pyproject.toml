@@ -20,4 +20,4 @@ where = ["."]
 include = ["utils*"]
 
 [project.scripts]
-three-qubit-prob = "utils.three_qubit_probability:main"   # optional CLI
+cond-prob = "utils.cond_probability:main"   # optional CLI
