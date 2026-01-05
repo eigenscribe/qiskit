@@ -15,9 +15,9 @@ dependencies = [
 ]
 
 [tool.setuptools.packages.find]
-# include everything that looks like a package
-where = ["."]
-include = ["utils*"]
+# Look for packages inside the `src` directory
+where = ["src"]
+include = ["*"]                     # grab any package under `src`
 
 [project.scripts]
-cond-prob = "utils.cond_probability:main"   # optional CLI
+cond-prob = "src.utils.cond_probability:main"   # optional CLI
