@@ -10,7 +10,7 @@ analyze_circuit(circuit: QuantumCircuit, target_q1: int = 0) -> Dict[(int,int), 
 Library usage
 -------------
 from qiskit import QuantumCircuit
-from utils.qubit_cond_probabilities import analyze_circuit
+from utils.cond_probabilities import analyze_circuit
 
 qc = QuantumCircuit(3)
 qc.h(0); qc.cx(0, 1); qc.cs(1,2)
