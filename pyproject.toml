@@ -3,21 +3,28 @@ requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "three-qubit-tools"          # what you will `import`, NOT the folder
+name = "three-qubit-tools"
 version = "0.1.0"
-description = "Utilities for 3-qubit conditional probabilities"
-authors = [{ name = "Your Name", email = "you@example.com" }]
-requires-python = ">=3.8"
+description = "Utilities for quantum circuit analysis and separability"
+requires-python = ">=3.10"
 dependencies = [
     "qiskit>=0.45",
     "matplotlib>=3.6",
-    "numpy>=1.23"
+    "numpy>=1.23",
 ]
 
+[dependency-groups]
+notebooks = [
+    "ipykernel>=6.29",
+    "ipython>=8.25",
+]
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
 [tool.setuptools.packages.find]
-# Look for packages inside the `src` directory
-where = ["src"]
-include = ["*"]                     # grab any package under `src`
+where = ["."]
+include = ["src*"]
 
 [project.scripts]
-cond-prob = "src.utils.cond_probability:main"   # optional CLI
+cond-prob = "src.utils.cond_probability:main"
